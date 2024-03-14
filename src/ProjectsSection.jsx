@@ -23,49 +23,49 @@ function ProjectsSection() {
   const projects = [
     {   
         id:1,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:2,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:3,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:4,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:5,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:6,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
     },
     {   
         id:7,
-        imgUrl: "/src/projectImages/sample.png",
+        imgUrl: "./src/projectImages/sample.png",
         title: "Project Number 1",
         languages: "JS, HTML, CSS, React",
         desc: ""
