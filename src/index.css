@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700&family=Oswald:wght@200;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #08a4a7;
+  /*main color*/
+  color: #Fff;
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  /*temporary fix*/
+}
+
+/*NAV SECTION*/
+nav {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(8, 164, 167, 1) 75%);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: -1px 1px 10px #fff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+}
+
+nav li {
+  padding: 7px;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+  width: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-inline: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: all .42s;
+}
+
+nav li:hover {
+  background-color: #91ffff;
+  box-shadow: 1px 1px 10px #91ffff;
+  font-size: 1.5rem;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  font-weight: 900;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*NAV SECTION END*/
+
+
+/*HEADER SECTION*/
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header .box {
+  width: 45%;
+  margin: 20px;
+}
+
+header .abtBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #91ffff;
+}
+
+header .imgBox {
+  box-shadow: 0px 0px 10px #91ffff;
+  border-radius: 50%;
+}
+
+header .imgBox img {
+  width: 100%;
+}
+
+
+/*ANIMATED BG*/
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*ANIMATED BG END*/
+
+
+
+/*HEADER SECTION END*/
+
+
+
+/*PROJECTS SECTION*/
+.projects-section {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  background: rgb(77,254,209);
+background: linear-gradient(160deg, rgba(77,254,209,1) 3%, rgba(255,255,255,1) 51%, rgba(145,255,255,1) 63%, rgba(8,164,167,1) 86%);
+
+
+  width: 29%;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all .42s;
+  margin-bottom: 20px;
+  margin-right: -20%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 1px 5px;
+
+
+  transform: rotateX(20deg) rotateY(-50deg) rotateZ(0deg);
+  transform-origin: 100% 0%;
+}
+
+.card:hover {
+  background-color: rgb(0, 0, 0, 1);
+  box-shadow: 2px 1px 20px #91ffff;
+  animation: pullCard .4s forwards;
+}
+
+.card:not(:hover) {
+  animation: returnCard 1s forward;
+}
+
+.checked-card {
+  background: rgb(77,254,209);
+background: linear-gradient(160deg, rgba(77,254,209,1) 3%, rgba(255,255,255,1) 51%, rgba(145,255,255,1) 63%, rgba(8,164,167,1) 86%);
+  width: 40%;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  transition: all .42s;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 1px 5px;
+  z-index: 999;
+
+  position: absolute;
+  left: 30%;
+  top: 100%;
+}
+
+@keyframes pullCard {
+  0% {
+    transform: rotateX(20deg) rotateY(-50deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(20deg) rotateY(-50deg) rotateZ(0deg) translateY(-100px);
+  }
+}
+
+@keyframes returnCard {
+  0% {
+    transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateX(20deg) rotateY(-50deg) rotateZ(0deg) translateY(-100px);
+  }
+}
+
+
+.card img {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.checked-card button {
+  font-size: 1.5em;
+  font-weight: 600;
+  align-self: center;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(215deg, rgba(255, 255, 255, 1) 0%, rgba(145, 255, 255, 1) 75%);
+  display: flex;
+}
+
+.card button {
+  display: none;
+}
+
+/*PROJECTS SECTION END*/
